@@ -31,13 +31,16 @@ Test that your account has the privileges to create IAM roles, lambda functions 
 The following commands should all work OK, without throwing errors:
 
 1. Set up a simple IAM role
+
   ```bash
   aws iam create-role \
   --role-name=hello-world-lambda-executor \
   --assume-role-policy-document '{"Version": "2012-10-17", "Statement": [{"Effect": "Allow","Principal": {"Service": "lambda.amazonaws.com"},"Action": "sts:AssumeRole"}]}' \
   --query Role.Arn --output text
   ```
+
 2. Wait about 10 seconds, then use the result printed by the previous command instead of `<ROLE>` in the command below, to set up a simple Lambda function (get the ZIP file from the [test](test) directory and put it in the local directory where this command is executed).
+
   ```bash
   aws lambda create-function \
   --function-name hello-world-function2 \
@@ -46,7 +49,9 @@ The following commands should all work OK, without throwing errors:
   --handler main.handler \
   --zip-file fileb://test-lambda.zip 
   ```
+
 3. set up a simple API interface:
+
   ```bash
   aws apigateway create-rest-api --name test-api
   ```

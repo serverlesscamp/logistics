@@ -13,8 +13,8 @@ This means that you can also choose the language and the platform you want to ex
 
 Please bring your own computer to the camp, so you can be comfortable coding from the start, and so that you have the code from the exercises on your machine when you leave. This is how you need to set it up:
 
-* [If you plan to use AWS Lambda and API Gateway](#awssetup)
-* [If you plan to use Azure Cloud Functions](#azuresetup)
+* [If you plan to use AWS Lambda and API Gateway](#setup-for-aws)
+* [If you plan to use Azure Cloud Functions](#setup-for-azure)
 
 ## Setup for AWS
 

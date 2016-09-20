@@ -16,7 +16,7 @@ Please bring your own computer to the camp, so you can be comfortable coding fro
 * [If you plan to use AWS Lambda and API Gateway](#awssetup)
 * [If you plan to use Azure Cloud Functions](#azuresetup)
 
-## Setup for AWS {#awssetup}
+## Setup for AWS
 
 * Register for an AWS account upfront if you don't already have one. To use Lambda, you'll need a verified account (typically using phone verification), and the stuff we'll do will fit into the free account allowance, but you will need an individual account. Register at [aws.amazon.com/](https://aws.amazon.com)
 * Install [AWS Command line tools](https://aws.amazon.com/cli/)
@@ -57,7 +57,7 @@ aws lambda create-function \
 aws apigateway create-rest-api --name test-api
 ```
 
-## Setup for Azure {#azuresetup}
+## Setup for Azure
 
 * If you have MSDN, you likely already have access to Azure. If not, you'll need an Azure subscription. Register at [azure.microsoft.com](https://azure.microsoft.com), you can also use free trial for this camp.
 * If you have Node.js installed, install the azurefunctions NPM package. This provides the [command line interface for azure functions](https://github.com/azure/azure-webjobs-sdk-script/pull/477), not yet officially released as part of the main CLI tools.

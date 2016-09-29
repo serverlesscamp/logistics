@@ -39,7 +39,7 @@ The following commands should all work OK, without throwing errors:
   --query Role.Arn --output text
   ```
 
-2. Wait about 10 seconds, then use the result printed by the previous command instead of `<ROLE>` in the command below, to set up a simple Lambda function (get the ZIP file from the [test](test) directory and put it in the local directory where this command is executed).
+2. Wait about 10 seconds, then use the result printed by the previous command instead of `<ROLE>` in the command below, to set up a simple Lambda function (get the ZIP file from the [test-lambda](test-lambda) directory and put it in the local directory where this command is executed).
 
   ```bash
   aws lambda create-function \

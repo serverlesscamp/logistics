@@ -58,6 +58,27 @@ The following commands should all work OK, without throwing errors:
 
 ## Setup for Azure
 
-* If you have MSDN, you likely already have access to Azure. If not, you'll need an Azure subscription. Register at [azure.microsoft.com](https://azure.microsoft.com), you can also use free trial for this camp.
-* If you have Node.js installed, install the azurefunctions NPM package. This provides the [command line interface for azure functions](https://github.com/azure/azure-webjobs-sdk-script/pull/477), not yet officially released as part of the main CLI tools.
+### Setup an Azure account
+
+* If you have MSDN, you likely already have access to Azure. If not, you'll need an Azure subscription. Register at [azure.microsoft.com](https://azure.microsoft.com), you can also use the free trial for this camp. (Note: the trial registration requires a valid credit card and phone number for the verification)
+
+### Your first function
+
+* You can create your first function directly from the [Azure Functions website](https://functions.azure.com/try). You can find the detailed instruction in the [getting started guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function).
+* If you want to work with your functions locally and use git for version control you can set it up using the [continuous deployment guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-continuous-deployment).
+* You can start learning more about Azure Functions from the [official documentation](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview).
+
+### Test your Azure setup
+* You can use the built-in Azure Functions Management interface inside the [Azure Portal](https://portal.azure.com/)
+
+### Using Azure Functions from the command line (Early Beta)
+* **Note:** the Azure Functions CLI is using Node.js but currently **only supporting Windows**.
+* Currently two CLI exist for Azure Functions:
+  * Old: [azurefunctions](https://www.npmjs.com/package/azurefunctions)
+    * some features might not work
+    * [available options](https://github.com/azure/azure-webjobs-sdk-script/pull/477)
+  * New: [azure-functions-cli](https://www.npmjs.com/package/azure-functions-cli)
+    * some features might not work
+    * not fully documented, usage samples are missing
+    * [available options](https://www.npmjs.com/package/azure-functions-cli)
 
